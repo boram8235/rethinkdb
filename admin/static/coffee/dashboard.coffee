@@ -114,8 +114,8 @@ module 'DashboardView', ->
                 r.db(system_db)
                 .table('stats').get(['cluster'])
                 .do((stat) ->
-                    keys_read: stat('query_engine')('read_docs_per_sec')
-                    keys_set: stat('query_engine')('written_docs_per_sec')
+                    keys_read: r.random(200000, 400000)#stat('query_engine')('read_docs_per_sec')
+                    keys_set: r.random(100000, 1000000)#stat('query_engine')('written_docs_per_sec')
                 ), 1000, @stats.on_result)
 
             @cluster_performance = new Vis.OpsPlot(@stats.get_stats,

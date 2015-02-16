@@ -90,7 +90,7 @@ module 'Vis', ->
         # The OpsPlot has one required argument:
         #   _stats_fn: function that provides data to be plotted
         # It also has one optional argument:
-        #   options: an object specifying any of the following 
+        #   options: an object specifying any of the following
         #            to override default values:
         #       * height: height of the plot in pixels
         #       * width: width of the plot in pixels
@@ -101,12 +101,12 @@ module 'Vis', ->
         #           divisible by the number of seconds
         #       * haxis.seconds_per_tick: how many seconds
         #           before placing a tick
-        #       * haxis.ticks_per_label: how many ticks before 
-        #           placing a label on the x-axis 
+        #       * haxis.ticks_per_label: how many ticks before
+        #           placing a label on the x-axis
         #       * vaxis.num_per_tick: how many units on the y-axis
         #           before placing a tick
-        #       * vaxis.ticks_per_label: how many ticks before 
-        #           placing a label on the y-axis 
+        #       * vaxis.ticks_per_label: how many ticks before
+        #           placing a label on the y-axis
         #       * type: the type of plot (used to determine the title
         #           of the plot). valid values include 'cluster',
         #           'datacenter', 'server', 'database', and 'table'
